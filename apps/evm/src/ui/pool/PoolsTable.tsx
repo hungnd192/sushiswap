@@ -103,7 +103,7 @@ const COLUMNS = [
                   Create position
                 </Link>
               </DropdownMenuItem>
-              <TooltipProvider>
+              {/* <TooltipProvider>
                 <Tooltip delayDuration={0}>
                   <TooltipTrigger asChild={row.original.hasEnabledSteerVault}>
                     <DropdownMenuItem
@@ -139,7 +139,7 @@ const COLUMNS = [
                     </p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
+              </TooltipProvider> */}
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>

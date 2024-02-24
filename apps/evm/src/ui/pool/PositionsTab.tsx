@@ -29,48 +29,48 @@ const ITEMS: { id: string; value: string; children: React.ReactNode }[] = [
       </div>
     ),
   },
-  {
-    id: 'sushiswap-v2',
-    value: 'v2',
-    children: (
-      <div className="flex items-center gap-2">
-        <span>🍣</span>{' '}
-        <span>
-          SushiSwap <sup>v2</sup>
-        </span>
-      </div>
-    ),
-  },
-  {
-    id: 'trident-stable',
-    value: 'stable',
-    children: (
-      <div className="flex items-center gap-2">
-        <span>🍱</span>
-        <span>Trident Stable</span>
-      </div>
-    ),
-  },
-  {
-    id: 'trident-classic',
-    value: 'classic',
-    children: (
-      <div className="flex items-center gap-2">
-        <span>🍱</span>
-        <span>Trident Classic</span>
-      </div>
-    ),
-  },
-  {
-    id: 'sushiswap-smart',
-    value: 'smart',
-    children: (
-      <div className="flex items-center gap-2">
-        <span>💡</span>
-        <span>Smart Pool</span>
-      </div>
-    ),
-  },
+  // {
+  //   id: 'sushiswap-v2',
+  //   value: 'v2',
+  //   children: (
+  //     <div className="flex items-center gap-2">
+  //       <span>🍣</span>{' '}
+  //       <span>
+  //         SushiSwap <sup>v2</sup>
+  //       </span>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   id: 'trident-stable',
+  //   value: 'stable',
+  //   children: (
+  //     <div className="flex items-center gap-2">
+  //       <span>🍱</span>
+  //       <span>Trident Stable</span>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   id: 'trident-classic',
+  //   value: 'classic',
+  //   children: (
+  //     <div className="flex items-center gap-2">
+  //       <span>🍱</span>
+  //       <span>Trident Classic</span>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   id: 'sushiswap-smart',
+  //   value: 'smart',
+  //   children: (
+  //     <div className="flex items-center gap-2">
+  //       <span>💡</span>
+  //       <span>Smart Pool</span>
+  //     </div>
+  //   ),
+  // },
 ]
 
 export const PositionsTab = () => {
@@ -109,7 +109,7 @@ export const PositionsTab = () => {
         <TabsContent value="v3">
           <ConcentratedPositionsTable hideNewPositionButton={true} />
         </TabsContent>
-        <TabsContent value="v2">
+        {/* <TabsContent value="v2">
           <PositionsTable
             protocol={Protocol.SUSHISWAP_V2}
             rowLink={(row) => `/pool/${row.pool.id}`}
@@ -129,7 +129,7 @@ export const PositionsTab = () => {
         </TabsContent>
         <TabsContent value="smart">
           <SmartPositionsTable />
-        </TabsContent>
+        </TabsContent> */}
       </Tabs>
     </div>
   )

@@ -142,7 +142,7 @@ export const Hero: FC = () => {
           </Button>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-4 lg:items-end">
+      {/* <div className="flex flex-col items-center gap-4 lg:items-end">
         <div className="flex flex-col items-center gap-1 lg:items-end">
           <span className="font-semibold lg:text-sm">
             Looking for a partnership with Sushi?
@@ -164,7 +164,7 @@ export const Hero: FC = () => {
             </LinkExternal>
           </Button>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
