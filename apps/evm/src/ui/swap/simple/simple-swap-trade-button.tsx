@@ -72,9 +72,9 @@ export const _SimpleSwapTradeButton: FC<{
           guardWhen={maintenance}
           guardText="Maintenance in progress"
         >
-          <Checker.Connect>
+          <Checker.Connect variant="border">
             <Checker.Network chainId={chainId}>
-              <Checker.Amounts chainId={chainId} amounts={[swapAmount]}>
+              <Checker.Amounts variant="border" chainId={chainId} amounts={[swapAmount]}>
                 <Checker.ApproveERC20
                   id="approve-erc20"
                   amount={swapAmount}

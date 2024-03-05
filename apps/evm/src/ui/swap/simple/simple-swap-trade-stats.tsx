@@ -110,7 +110,7 @@ export const SimpleSwapTradeStats: FC = () => {
               <TradeRoutePathView trade={trade}>
                 <button
                   type="button"
-                  className="text-sm text-blue font-semibold"
+                  className="text-sm text-primary font-semibold"
                 >
                   View
                 </button>

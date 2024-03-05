@@ -17,7 +17,7 @@ const PathnameButton = forwardRef<HTMLButtonElement, PathnameButton>(
         ref={ref}
         variant={
           _pathname === pathname || _pathname === pathname.replace('%3A', ':')
-            ? 'secondary'
+            ? 'border'
             : 'ghost'
         }
       />

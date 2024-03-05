@@ -44,12 +44,12 @@ export const UserProfile: FC<ProfileProps> = () => {
 
   const chainId = (chain?.id as ChainId) || ChainId.ETHEREUM
 
-  if (!address || !isMounted) return <ConnectButton variant="secondary" />
+  if (!address || !isMounted) return <ConnectButton variant="secondary" className='button-neubrutal' />
 
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="secondary">
+        <Button variant="secondary" className='button-neubrutal'>
           {
             avatar ? (
               <img
@@ -68,7 +68,7 @@ export const UserProfile: FC<ProfileProps> = () => {
         </Button>
       </PopoverTrigger>
       <PopoverContent
-        className="w-72 sm:w-80 rounded-md sm:rounded-xl"
+        className="w-72 sm:w-80 rounded-lg"
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         {!isConnected && <ConnectView onSelect={close} />}

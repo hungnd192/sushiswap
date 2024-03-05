@@ -23,7 +23,11 @@ export const DATE_COLUMN = {
 export const TYPE_COLUMN = {
   id: 'type',
   header: 'TYPE',
-  cell: (props: any) => props.row.original.type,
+  cell: (props: any) => (
+    <div className={(props.row.original.type === 'Swap' ? 'text-[#ffa800] dark:text-[#ffe500]' : props.row.original.type === 'Add' ? 'text-[#00e778]' : props.row.original.type === 'Remove' ? 'text-[#f53309] dark:text-[#fb8d75]' : '')}>
+      {props.row.original.type}
+    </div>
+  ),
   meta: {
     skeleton: <SkeletonText fontSize="lg" />
   }
@@ -80,7 +84,7 @@ export const TXN_COLUMN = {
   header: 'TXN',
   cell: (props: any) => (
     <LinkExternal
-    href={'javscript:;'}
+    href={`https://testnet.u2uscan.xyz/tx/${props.row.original.hash}`}
   >
     <Button
       asChild

@@ -87,7 +87,7 @@ export const  SimpleSwapTransaction: FC = () => {
         </div>
       }
     >
-      <Card>
+      <Card className="border-neubrutal mb-1 mr-1">
         <DataTable
           state={state}
           loading={!data && isValidating}

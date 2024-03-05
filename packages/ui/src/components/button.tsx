@@ -7,7 +7,7 @@ import classNames from 'classnames'
 import { IconComponent } from '../types'
 
 const buttonVariants = cva(
-  'cursor-pointer whitespace-nowrap inline-flex gap-2 items-center justify-center font-medium disabled:opacity-50 disabled:pointer-events-none ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-blue',
+  'cursor-pointer rounded-lg whitespace-nowrap inline-flex gap-2 items-center justify-center font-medium disabled:opacity-50 disabled:pointer-events-none ring-offset-background transition-colors focus-visible:outline-none ring-blue',
   {
     variants: {
       variant: {
@@ -19,16 +19,17 @@ const buttonVariants = cva(
           'bg-amber-400 hover:bg-amber-500 focus:bg-amber-600 active:bg-amber-500 text-amber-900',
         outline:
           '!border border-accent bg-background hover:bg-muted hover:text-accent-foreground',
-        secondary: 'bg-secondary hover:bg-muted focus:bg-accent',
+        secondary: 'bg-secondary hover:bg-muted focus:bg-accent dark:bg-slate-700',
         ghost: 'hover:bg-secondary focus:bg-accent',
-        link: 'text-blue hover:underline hover:text-blue-700 font-semibold !p-0 !h-[unset] !min-h-[unset]',
+        link: 'text-primary hover:underline hover:opacity-80 font-semibold !p-0 !h-[unset] !min-h-[unset]',
+        border: 'text-black bg-primary border-2 border-black transition-shadow hover:shadow-[0_4px_0_0_rgba(0,0,0,1)]',
       },
       size: {
-        xs: 'min-h-[26px] h-[26px] px-2 text-xs rounded-lg',
-        sm: 'min-h-[36px] h-[36px] px-3 text-sm rounded-xl',
-        default: 'min-h-[40px] h-[40px] py-2 px-4 text-sm rounded-xl',
-        lg: 'min-h-[44px] h-[44px] px-4 rounded-xl',
-        xl: 'min-h-[52px] h-[52px] px-4 rounded-xl',
+        xs: 'min-h-[26px] h-[26px] px-2 text-xs',
+        sm: 'min-h-[36px] h-[36px] px-3 text-sm',
+        default: 'min-h-[40px] h-[40px] py-2 px-4 text-sm',
+        lg: 'min-h-[44px] h-[44px] px-4',
+        xl: 'min-h-[52px] h-[52px] px-4',
       },
     },
     defaultVariants: {

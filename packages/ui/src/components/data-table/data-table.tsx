@@ -110,7 +110,7 @@ export function DataTable<TData, TValue>({
   })
 
   return (
-    <div className="space-y-4 border-t border-secondary">
+    <div className="space-y-4">
       {toolbar ? toolbar(table) : null}
       <Table className={pagination ? 'border-b border-secondary' : ''}>
         <TableHeader>

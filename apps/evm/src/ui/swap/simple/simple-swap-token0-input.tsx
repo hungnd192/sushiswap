@@ -14,7 +14,7 @@ export const SimpleSwapToken0Input = () => {
     <Web3Input.Currency
       id="swap-from"
       type="INPUT"
-      className="border border-accent p-3 bg-white dark:bg-slate-800 rounded-xl"
+      className="border-neubrutal p-3 bg-white dark:bg-slate-700 rounded-lg"
       chainId={chainId}
       onSelect={setToken0}
       value={swapAmountString}

@@ -1,4 +1,5 @@
 import sharedConfig from '@sushiswap/tailwindcss-config'
+import colors from 'tailwindcss/colors'
 
 // @ts-check
 /** @type {import('tailwindcss').Config} */
@@ -14,7 +15,21 @@ const tailwindConfig = {
     //   xl: '1200px',
     //   xxl: '1440px',
     // },
+    colors: {
+      primary: '#6bffff',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      yellow: colors.yellow,
+      red: colors.red,
+      slate: colors.slate,
+      neutral: colors.neutral,
+      transparent: 'transparent'
+    },
     extend: {
+      fontFamily: {
+        display: 'Metuo Personal Use, sans-serif',
+      },
       display: ['group-hover'],
       visibility: ['group-hover'],
       keyframes: {

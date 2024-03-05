@@ -53,7 +53,7 @@ export const SimpleSwapHeader = () => {
   }, [invert, prices, token0, token1])
 
   return (
-    <div className="flex flex-col items-start gap-2 mb-4 sm:mt-6 mt-2 overflow-hidden">
+    <div className="flex flex-col items-start gap-2 sm:mt-4 mt-2 overflow-hidden">
       <h1 className={typographyVariants({ variant: 'h1' })}>Trade</h1>
       {isLoading || isPricesLoading || !token0 || !token1 ? (
         <SkeletonText fontSize="sm" className="w-2/4" />
